@@ -1,0 +1,117 @@
+# Dependencies
+node_modules/
+Backend/node_modules/
+frontend/node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+Backend/coverage/
+frontend/coverage/
+
+# Production builds
+/build
+Backend/build/
+frontend/build/
+frontend/.cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+Backend/.env
+frontend/.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Uploaded files (you might want to keep these in version control or not, depending on your needs)
+Backend/uploads/
+Backend/materialuploads/
+Backend/billuploads/
+Backend/progressuploads/
+Backend/Router/billuploads/
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Cache files
+.cache
+.parcel-cache
+
+# Build artifacts
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Package lock files (optional - some teams prefer to keep these)
+# package-lock.json
+# yarn.lock
+
+# Database files (if using local DB)
+*.sqlite
+*.sqlite3
+*.db
