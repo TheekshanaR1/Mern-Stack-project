@@ -1,14 +1,17 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+require("dotenv").config();
 
-//const db = mongoose.connect("mongodb://0.0.0.0:27017/CCMS");
-const db = mongoose.connect("mongodb+srv://admin:Z9Zbg3QjVvU2Xf3l@cluster0.uvbjflr.mongodb.net/");
+// Get MongoDB URI from environment variables
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/CCMS";
+
+// Connect to MongoDB
+const db = mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log("MongoDB connection successful");
+}).catch((error) => {
+  console.error("MongoDB connection error:", error);
+});
 
 module.exports = db;
-
-//ajtdQYIXjaiZbNli
-//mongoose.connect("mongodb+srv://janithsdissanayaka:ajtdQYIXjaiZbNli@cluster0.n2zxb.mongodb.net/")
-//mongoose.connect("mongodb://0.0.0.0:27017/CCMS")
-//mongodb+srv://admin12:nje2oNExl9DamvCd@cluster0.q4j6l.mongodb.net/
-
-//Z9Zbg3QjVvU2Xf3l
-//mongodb+srv://admin:Z9Zbg3QjVvU2Xf3l@cluster0.uvbjflr.mongodb.net/
