@@ -7,9 +7,11 @@ const cors = require("cors");
 const User = require("./Model/UserModel");
 const db = require("./util/db");
 
-//payment gtway
-const stripe = require("stripe")("sk_test_51R8NoCSBlInf359dPI3W3e8CBI04Ghwqs6dNzWaAZJFqtW8tazkKFAXVYjLDWvDYdM4goGijNdqRDKgKzcpp09Ou00tVxe7GfL");
+// Load environment variables
 require("dotenv").config();
+
+// Payment gateway stripe
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 
 const router2 = require("./Router/MaterialRoute"); // import materials route

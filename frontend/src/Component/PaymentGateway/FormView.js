@@ -16,4 +16,3 @@ const stripePromise = loadStripe('pk_test_51R8NoCSBlInf359dsUzjsTVOx5Sk64cP9ioDV
 }
 
 export default FormView;
-////sk_test_51R8NoCSBlInf359dPI3W3e8CBI04Ghwqs6dNzWaAZJFqtW8tazkKFAXVYjLDWvDYdM4goGijNdqRDKgKzcpp09Ou00tVxe7GfL
