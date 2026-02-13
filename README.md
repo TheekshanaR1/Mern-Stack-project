@@ -87,12 +87,14 @@ cd Backend
 node seedAdmin.js
 ```
 
+<!--
 **Login Credentials:**
 - User ID: `ADMIN001`
 - Email: `admin@ccms.com`
 - Password: `Admin@123`
 
 ⚠️ **Important**: Change the password after first login!
+-->
 
 ## 📁 Project Structure
 
